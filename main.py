@@ -35,7 +35,7 @@ def is_sufficient(order_ingredients):
     """Returns true when all the ingredients are available."""
     for item in order_ingredients:
         if order_ingredients[item] >= resources[item]:
-            print("Sorry there is not enough water.")
+            print(f"Sorry there is not enough {item}.")
             return False
     return True
 
